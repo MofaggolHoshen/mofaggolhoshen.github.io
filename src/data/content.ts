@@ -184,30 +184,21 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    id: "post-1",
-    title: "Why I Moved from Create React App to Vite",
+    id: "post-linkedin-1",
+    title: "Why I Moved From Create React App to Vite",
     excerpt:
-      "A practical breakdown of the migration process, the wins, and what I learned about modern build tooling.",
-    date: "2026-04-10",
-    slug: "cra-to-vite",
-    tags: ["Vite", "React", "Tooling"],
+      "A LinkedIn article sharing the reasons behind the migration and the practical benefits of Vite.",
+    date: "2026-07-03",
+    href: "https://www.linkedin.com/pulse/why-i-moved-from-create-react-app-vite-mofaggol-hoshen-ergge/",
+    tags: ["LinkedIn", "Vite", "React"],
   },
   {
-    id: "post-2",
-    title: "Accessible Forms: The Checklist I Use Every Time",
+    id: "post-linkedin-3",
+    title: "Blazor vs React — My Experience After Working with Both",
     excerpt:
-      "Keyboard nav, ARIA labels, error messages — here is the practical list I run through on every form I build.",
-    date: "2026-03-22",
-    slug: "accessible-forms",
-    tags: ["Accessibility", "HTML", "CSS"],
-  },
-  {
-    id: "post-3",
-    title: "TypeScript Strict Mode: What It Catches and Why It Matters",
-    excerpt:
-      "Turning on strict mode felt painful at first. Now I would not start a project without it.",
-    date: "2026-02-14",
-    slug: "ts-strict-mode",
-    tags: ["TypeScript", "Best Practices"],
+      "A comparison of the strengths, trade-offs, and day-to-day experience of using Blazor and React on real projects.",
+    date: "2026-07-07",
+    href: "https://www.linkedin.com/pulse/blazor-vs-react-my-experience-after-working-both-mofaggol-hoshen-rxbue/",
+    tags: ["LinkedIn", "Blazor", "React"],
   },
 ];

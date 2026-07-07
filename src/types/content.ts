@@ -34,6 +34,7 @@ export interface BlogPost {
   title: string;
   excerpt: string;
   date: string;
-  slug: string;
+  slug?: string;
+  href?: string;
   tags: string[];
 }
