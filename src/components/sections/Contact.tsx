@@ -29,10 +29,23 @@ function validate(fields: FormState): FormErrors {
   return errors
 }
 
+const EMAIL = 'mofaggol.hoshen@gmx.de'
+
+function createMailToHref({ name, email, message }: FormState) {
+  const subject = `Portfolio contact from ${name || 'a visitor'}`
+  const body = `${message}
+
+---
+Name: ${name}
+Email: ${email}`
+
+return `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+}
+
 const INITIAL: FormState = { name: '', email: '', message: '' }
 
 const INPUT_BASE =
-  'w-full px-4 py-3 bg-[--color-canvas] border rounded-lg text-[--color-strong] text-sm transition-colors placeholder:text-[--color-muted]/50 focus:outline-none focus:border-[--color-accent] focus:ring-2 focus:ring-[--color-accent-10]'
+  'w-full px-4 py-3 bg-[var(--color-canvas)] border rounded-lg text-[var(--color-strong)] text-sm transition-colors placeholder:text-[var(--color-muted)]/50 focus:outline-none focus:border-[var(--color-accent)] focus:ring-2 focus:ring-[var(--color-accent-10)]'
 
 export function Contact() {
   const [fields, setFields] = useState<FormState>(INITIAL)
@@ -54,6 +67,10 @@ export function Contact() {
       setErrors(validationErrors)
       return
     }
+
+    const mailto = createMailToHref(fields)
+    window.location.href = mailto
+
     setSubmitted(true)
     setFields(INITIAL)
     setErrors({})
@@ -67,6 +84,16 @@ export function Contact() {
           title="Get In Touch"
           subtitle="I'm open to new opportunities, collaborations, and interesting conversations."
         />
+
+        <p className="mt-6 text-sm text-[--color-muted]">
+          Prefer email?{' '}
+          <a
+            href={`mailto:${EMAIL}`}
+            className="font-medium text-[var(--color-accent)] transition-colors hover:text-[var(--color-accent-50)]"
+          >
+            {EMAIL}
+          </a>
+        </p>
 
         {submitted ? (
           <div
@@ -91,7 +118,7 @@ export function Contact() {
                 id="contact-name"
                 name="name"
                 type="text"
-                className={`${INPUT_BASE} ${errors.name ? 'border-red-500' : 'border-[--color-line]'}`}
+                className={`${INPUT_BASE} ${errors.name ? 'border-red-500' : 'border-[var(--color-line)]'}`}
                 value={fields.name}
                 onChange={handleChange}
                 autoComplete="name"
@@ -113,7 +140,7 @@ export function Contact() {
                 id="contact-email"
                 name="email"
                 type="email"
-                className={`${INPUT_BASE} ${errors.email ? 'border-red-500' : 'border-[--color-line]'}`}
+                className={`${INPUT_BASE} ${errors.email ? 'border-red-500' : 'border-[var(--color-line)]'}`}
                 value={fields.email}
                 onChange={handleChange}
                 autoComplete="email"
