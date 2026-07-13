@@ -5,11 +5,11 @@ type ButtonSize = 'sm' | 'md' | 'lg'
 
 const VARIANT_CLASSES: Record<ButtonVariant, string> = {
   primary:
-    'bg-[--color-accent] text-white border-[--color-accent] hover:opacity-90 hover:shadow-md',
+    'bg-[var(--color-accent)] text-white border-transparent hover:opacity-90 hover:shadow-md',
   secondary:
-    'bg-transparent text-[--color-accent] border-[--color-accent-50] hover:bg-[--color-accent-10]',
+    'bg-transparent text-[var(--color-accent)] border-[var(--color-accent)] hover:bg-[var(--color-accent-10)]',
   ghost:
-    'bg-transparent text-[--color-strong] border-[--color-line] hover:bg-[--color-subtle]',
+    'bg-transparent text-[var(--color-strong)] border-[var(--color-line)] hover:bg-[var(--color-subtle)]',
 }
 
 const SIZE_CLASSES: Record<ButtonSize, string> = {
@@ -19,7 +19,7 @@ const SIZE_CLASSES: Record<ButtonSize, string> = {
 }
 
 const BASE =
-  'inline-flex items-center justify-center gap-2 font-medium border-2 rounded-lg cursor-pointer no-underline transition-all duration-200 whitespace-nowrap leading-none focus-visible:outline-2 focus-visible:outline-[--color-accent] focus-visible:outline-offset-2'
+  'inline-flex items-center justify-center gap-2 font-medium border-2 rounded-lg cursor-pointer no-underline transition-all duration-200 whitespace-nowrap leading-none focus-visible:outline-2 focus-visible:outline-[var(--color-accent)] focus-visible:outline-offset-2'
 
 interface BaseProps {
   variant?: ButtonVariant
