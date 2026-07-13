@@ -5,7 +5,7 @@ import { Projects } from "./components/sections/Projects";
 import { About } from "./components/sections/About";
 import { Skills } from "./components/sections/Skills";
 import { Experience } from "./components/sections/Experience";
-import { Testimonials } from "./components/sections/Testimonials";
+// import { Testimonials } from "./components/sections/Testimonials";
 import { BlogPreview } from "./components/sections/BlogPreview";
 import { Contact } from "./components/sections/Contact";
 
@@ -39,12 +39,11 @@ function App() {
           image: OG_IMAGE,
           jobTitle: "Full-Stack Developer",
           knowsAbout: ["C#", ".NET", "ASP.NET Core", "React", "React Native", "Tailwind CSS", "Azure", "Microservices", "CQRS"],
-          email: "contact@example.com", // Update with actual email
+          email: "mofaggol.hoshen@gmx.de", // Update with actual email
           sameAs: [
             "https://github.com/MofaggolHoshen",
             "https://linkedin.com/in/mofaggol-hoshen",
           ],
-          email: "mofaggol.hoshen@gmx.de",
         },
         {
           "@type": "WebSite",
