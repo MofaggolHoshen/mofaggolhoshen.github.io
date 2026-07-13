@@ -44,6 +44,7 @@ function App() {
             "https://github.com/MofaggolHoshen",
             "https://linkedin.com/in/mofaggol-hoshen",
           ],
+          email: "mofaggol.hoshen@gmx.de",
         },
         {
           "@type": "WebSite",
@@ -79,7 +80,7 @@ function App() {
       <About />
       <Skills />
       <Experience />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <BlogPreview />
       <Contact />
     </Layout>
