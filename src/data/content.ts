@@ -201,4 +201,14 @@ export const BLOG_POSTS: BlogPost[] = [
     href: "https://www.linkedin.com/pulse/blazor-vs-react-my-experience-after-working-both-mofaggol-hoshen-rxbue/",
     tags: ["LinkedIn", "Blazor", "React"],
   },
+  {
+    id: "post-linkedin-4",
+    title:
+      "Stop Asking One AI to Do Everything — Build Specialized Sub-Agents Instead",
+    excerpt:
+      "A LinkedIn article about designing AI systems with specialized sub-agents for better focus, reliability, and results.",
+    date: "2026-07-08",
+    href: "https://www.linkedin.com/pulse/stop-asking-one-ai-do-everything-build-specialized-instead-hoshen-evdte/",
+    tags: ["LinkedIn", "AI", "Agents"],
+  },
 ];
