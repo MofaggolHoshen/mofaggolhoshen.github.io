@@ -211,4 +211,13 @@ export const BLOG_POSTS: BlogPost[] = [
     href: "https://www.linkedin.com/pulse/stop-asking-one-ai-do-everything-build-specialized-instead-hoshen-evdte/",
     tags: ["LinkedIn", "AI", "Agents"],
   },
+  {
+    id: "post-linkedin-5",
+    title: "From Prompt Engineering to Context Engineering",
+    excerpt:
+      "A LinkedIn article on why the next step in AI tooling is designing rich context, not just better prompts.",
+    date: "2026-08-19",
+    href: "https://www.linkedin.com/pulse/from-prompt-engineering-context-mofaggol-hoshen-mlmye/",
+    tags: ["LinkedIn", "AI", "Context Engineering"],
+  },
 ];
