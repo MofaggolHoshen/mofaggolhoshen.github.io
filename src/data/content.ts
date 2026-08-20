@@ -212,11 +212,20 @@ export const BLOG_POSTS: BlogPost[] = [
     tags: ["LinkedIn", "AI", "Agents"],
   },
   {
+    id: "post-linkedin-6",
+    title: "AI Is Not Magic — How Large Language Models Actually Work",
+    excerpt:
+      "A LinkedIn article demystifying large language models and explaining the fundamentals of how they actually work.",
+    date: "2026-07-23",
+    href: "https://www.linkedin.com/pulse/ai-magic-how-large-language-models-actually-work-mofaggol-hoshen-4b1ae/",
+    tags: ["LinkedIn", "AI", "Machine Learning"],
+  },
+  {
     id: "post-linkedin-5",
     title: "From Prompt Engineering to Context Engineering",
     excerpt:
       "A LinkedIn article on why the next step in AI tooling is designing rich context, not just better prompts.",
-    date: "2026-08-19",
+    date: "2026-08-02",
     href: "https://www.linkedin.com/pulse/from-prompt-engineering-context-mofaggol-hoshen-mlmye/",
     tags: ["LinkedIn", "AI", "Context Engineering"],
   },
